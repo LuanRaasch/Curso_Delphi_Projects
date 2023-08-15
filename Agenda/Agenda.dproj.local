@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/03/04 20:43:02.000.264,=C:\Users\luanr\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/03/04 20:43:45.000.329,C:\Users\luanr\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Agenda\unitPrincipal.pas</Transaction>
+    <Transaction>2023/03/04 20:43:45.000.329,C:\Users\luanr\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Agenda\unitPrincipal.dfm</Transaction>
+    <Transaction>2023/03/04 20:43:55.000.056,C:\Users\luanr\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Agenda\Agenda.dproj</Transaction>
+    <Transaction>2023/03/04 20:46:44.000.083,=C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Agenda\Unit1.pas</Transaction>
+    <Transaction>2023/03/04 20:48:13.000.124,C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Agenda\Unit1.dfm=C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Agenda\unitDM.dfm</Transaction>
+    <Transaction>2023/03/04 20:48:13.000.124,C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Agenda\Unit1.pas=C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Agenda\unitDM.pas</Transaction>
+  </Transactions>
+</BorlandProject>

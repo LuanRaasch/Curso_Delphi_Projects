@@ -1,0 +1,64 @@
+object FormPrincipal: TFormPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Controle de Estoque'
+  ClientHeight = 544
+  ClientWidth = 1047
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  WindowState = wsMaximized
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 1047
+    Height = 89
+    Align = alTop
+    ParentBackground = False
+    TabOrder = 0
+    ExplicitWidth = 937
+    object BitBtn1: TBitBtn
+      Left = 0
+      Top = 33
+      Width = 75
+      Height = 25
+      Caption = 'BitBtn1'
+      TabOrder = 0
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 1016
+    object Sistema1: TMenuItem
+      Caption = 'Sistema'
+      object Sair1: TMenuItem
+        Caption = 'Sair'
+        OnClick = Sair1Click
+      end
+    end
+    object Cadastros1: TMenuItem
+      Caption = 'Cadastros'
+      object CadastrodeProdutos1: TMenuItem
+        Caption = 'Cadastro de Produtos'
+        OnClick = CadastrodeProdutos1Click
+      end
+    end
+    object Movimentaes1: TMenuItem
+      Caption = 'Movimenta'#231#245'es'
+      object GerenciarMovimentaes1: TMenuItem
+        Caption = 'Gerenciar Movimenta'#231#245'es'
+        OnClick = GerenciarMovimentaes1Click
+      end
+      object ConsultarMovimentaes1: TMenuItem
+        Caption = 'Consultar Movimenta'#231#245'es'
+        OnClick = ConsultarMovimentaes1Click
+      end
+    end
+  end
+end

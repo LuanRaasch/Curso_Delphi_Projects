@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/03/20 21:30:10.000.299,=C:\Users\luanr\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/03/29 19:35:04.000.142,=C:\Users\luanr\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/03/29 19:40:31.000.827,=C:\Users\luanr\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/03/29 19:46:13.000.661,C:\Users\luanr\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Recriando componente DB Navigator\UnitPrincipal.pas</Transaction>
+    <Transaction>2023/03/29 19:46:13.000.661,C:\Users\luanr\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Recriando componente DB Navigator\UnitPrincipal.dfm</Transaction>
+    <Transaction>2023/03/29 19:46:19.000.098,C:\Users\luanr\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Recriando componente DB Navigator\DBNAVI.pas</Transaction>
+    <Transaction>2023/03/29 19:46:19.000.098,C:\Users\luanr\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Recriando componente DB Navigator\DBNAVI.dfm</Transaction>
+    <Transaction>2023/03/29 19:46:37.000.198,C:\Users\luanr\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Recriando componente DB Navigator\dbNavi2.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

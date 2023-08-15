@@ -1,0 +1,39 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 359
+  Width = 655
+  object conecao: TFDConnection
+    Params.Strings = (
+      'Database=aula_aovivo'
+      'User_Name=root'
+      'DriverID=MySQL')
+    Connected = True
+    LoginPrompt = False
+    Left = 32
+    Top = 24
+  end
+  object tbClientes: TFDTable
+    Active = True
+    IndexFieldNames = 'id'
+    Connection = conecao
+    TableName = 'aula_aovivo.clientes'
+    Left = 128
+    Top = 24
+  end
+  object tbDependentes: TFDTable
+    Connection = conecao
+    TableName = 'aula_aovivo.dependentes'
+    Left = 232
+    Top = 24
+  end
+  object dsClientes: TDataSource
+    DataSet = tbClientes
+    Left = 128
+    Top = 104
+  end
+  object dsDependentes: TDataSource
+    DataSet = tbDependentes
+    Left = 232
+    Top = 104
+  end
+end

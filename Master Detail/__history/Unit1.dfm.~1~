@@ -1,0 +1,128 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 376
+  ClientWidth = 635
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DBGrid1: TDBGrid
+    Left = 8
+    Top = 64
+    Width = 320
+    Height = 120
+    DataSource = dsvenda
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object DBGrid2: TDBGrid
+    Left = 8
+    Top = 201
+    Width = 320
+    Height = 120
+    DataSource = dsivenda
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 280
+    Top = 24
+    Width = 240
+    Height = 25
+    TabOrder = 2
+  end
+  object conexao: TFDConnection
+    Params.Strings = (
+      'Database=sistema_vendas'
+      'User_Name=root'
+      'DriverID=MySQL')
+    Connected = True
+    LoginPrompt = False
+  end
+  object tbvenda: TFDTable
+    Active = True
+    IndexFieldNames = 'codvenda'
+    Connection = conexao
+    TableName = 'sistema_vendas.vendas'
+    Left = 40
+    object tbvendacodvenda: TFDAutoIncField
+      FieldName = 'codvenda'
+      Origin = 'codvenda'
+    end
+    object tbvendadatavenda: TDateField
+      FieldName = 'datavenda'
+      Origin = 'datavenda'
+      Required = True
+    end
+    object tbvendacodcliente: TIntegerField
+      FieldName = 'codcliente'
+      Origin = 'codcliente'
+      Required = True
+    end
+    object tbvendacliente: TStringField
+      FieldName = 'cliente'
+      Origin = 'cliente'
+      Required = True
+      Size = 80
+    end
+  end
+  object tbivenda: TFDTable
+    Active = True
+    IndexFieldNames = 'icodvenda'
+    MasterSource = dsvenda
+    MasterFields = 'codvenda'
+    DetailFields = 'icodvenda'
+    Connection = conexao
+    FetchOptions.AssignedValues = [evDetailCascade]
+    FetchOptions.DetailCascade = True
+    TableName = 'sistema_vendas.ivenda'
+    Left = 104
+    Top = 8
+    object tbivendainumvenda: TFDAutoIncField
+      FieldName = 'inumvenda'
+      Origin = 'inumvenda'
+      ProviderFlags = [pfInWhere, pfInKey]
+    end
+    object tbivendaicodvenda: TIntegerField
+      FieldName = 'icodvenda'
+      Origin = 'icodvenda'
+      Required = True
+    end
+    object tbivendaicodprod: TIntegerField
+      FieldName = 'icodprod'
+      Origin = 'icodprod'
+      Required = True
+    end
+    object tbivendainomeproduto: TStringField
+      FieldName = 'inomeproduto'
+      Origin = 'inomeproduto'
+      Required = True
+      Size = 80
+    end
+  end
+  object dsvenda: TDataSource
+    DataSet = tbvenda
+    Left = 152
+    Top = 8
+  end
+  object dsivenda: TDataSource
+    DataSet = tbivenda
+    Left = 200
+    Top = 8
+  end
+end

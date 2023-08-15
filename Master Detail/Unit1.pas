@@ -1,0 +1,67 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
+  FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.MySQL,
+  FireDAC.Phys.MySQLDef, FireDAC.VCLUI.Wait, FireDAC.Stan.Param, FireDAC.DatS,
+  FireDAC.DApt.Intf, FireDAC.DApt, Data.DB, Vcl.Grids, Vcl.DBGrids,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, Vcl.ExtCtrls, Vcl.DBCtrls,
+  Vcl.StdCtrls, ppBands, ppCache, ppClass, ppDB, ppDesignLayer, ppParameter,
+  ppProd, ppReport, ppComm, ppRelatv, ppDBPipe, Vcl.AppAnalytics,
+  Vcl.TitleBarCtrls, Vcl.WinXCtrls;
+
+type
+  TForm1 = class(TForm)
+    conexao: TFDConnection;
+    tbvenda: TFDTable;
+    tbivenda: TFDTable;
+    dsvenda: TDataSource;
+    dsivenda: TDataSource;
+    tbvendacodvenda: TFDAutoIncField;
+    tbvendadatavenda: TDateField;
+    tbvendacodcliente: TIntegerField;
+    tbvendacliente: TStringField;
+    tbivendainumvenda: TFDAutoIncField;
+    tbivendaicodvenda: TIntegerField;
+    tbivendaicodprod: TIntegerField;
+    tbivendainomeproduto: TStringField;
+    DBGrid1: TDBGrid;
+    DBGrid2: TDBGrid;
+    DBNavigator1: TDBNavigator;
+    Label1: TLabel;
+    Label2: TLabel;
+    DBNavigator2: TDBNavigator;
+    ppDBPipeline1: TppDBPipeline;
+    ppReport1: TppReport;
+    ppParameterList1: TppParameterList;
+    ppDesignLayers1: TppDesignLayers;
+    ppDesignLayer1: TppDesignLayer;
+    ppHeaderBand1: TppHeaderBand;
+    ppDetailBand1: TppDetailBand;
+    ppFooterBand1: TppFooterBand;
+    ToggleSwitch1: TToggleSwitch;
+    Label3: TLabel;
+    procedure ToggleSwitch1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.ToggleSwitch1Click(Sender: TObject);
+begin
+Self.Color := CLBACKGROUND;
+end;
+
+end.

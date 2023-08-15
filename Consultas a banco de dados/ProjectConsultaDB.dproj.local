@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2023/03/13 21:33:31.208,=C:\Users\luanr\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/03/13 21:34:51.833,C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Consultas a banco de dados\UnitPrincipal.dfm=C:\Users\luanr\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/03/13 21:34:51.833,C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Consultas a banco de dados\UnitPrincipal.pas=C:\Users\luanr\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/03/13 21:35:00.517,C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Consultas a banco de dados\ProjectConsultaDB.dproj=C:\Users\luanr\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/03/13 21:40:23.752,=C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Consultas a banco de dados\Unit1.pas</Transaction>
+    <Transaction>2023/03/13 21:40:54.590,C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Consultas a banco de dados\UnitDM.dfm=C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Consultas a banco de dados\Unit1.dfm</Transaction>
+    <Transaction>2023/03/13 21:40:54.590,C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Consultas a banco de dados\UnitDM.pas=C:\Users\luanr\OneDrive\Área de Trabalho\Delphi Projects\Consultas a banco de dados\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

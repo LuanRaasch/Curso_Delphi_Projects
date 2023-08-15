@@ -1,0 +1,102 @@
+unit UnitCalc;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TForm1 = class(TForm)
+    Btn5: TButton;
+    Btn6: TButton;
+    Btn7: TButton;
+    Btn8: TButton;
+    Btn9: TButton;
+    Btn0: TButton;
+    BtnSomar: TButton;
+    BtnMulti: TButton;
+    BtnDiv: TButton;
+    BtnClear: TButton;
+    BtnSub: TButton;
+    BtnVirgula: TButton;
+    Btn1: TButton;
+    Btn2: TButton;
+    Btn3: TButton;
+    Btn4: TButton;
+    BtnIgual: TButton;
+    EditResultado: TEdit;
+    Label1: TLabel;
+    procedure BtnSomarClick(Sender: TObject);
+    procedure BtnSubClick(Sender: TObject);
+    procedure BtnMultiClick(Sender: TObject);
+    procedure BtnDivClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+  var primeiroValor: Real; segundoValor: Real;
+
+{$R *.dfm}
+ function somar( valor1: Real; valor2: Real): Real;
+  var resultado: Real;
+   begin
+    resultado := valor1 + valor2;
+
+    Result := resultado;
+   end;
+
+ function subtrair( valor1: Real; valor2: Real): Real;
+  var resultado: Real;
+   begin
+    resultado := valor1 - valor2;
+
+    Result := resultado;
+   end;
+
+ function multiplicar( valor1: Real; valor2: Real): Real;
+  var resultado: Real;
+   begin
+    resultado := valor1 * valor2;
+
+    Result := resultado;
+   end;
+
+ function dividir( valor1: Real; valor2: Real): Real;
+  var resultado: Real;
+   begin
+    resultado := valor1 / valor2;
+
+    Result := resultado;
+   end;
+
+
+
+procedure TForm1.BtnDivClick(Sender: TObject);
+begin
+ dividir(primeiroValor, segundoValor);
+end;
+
+procedure TForm1.BtnMultiClick(Sender: TObject);
+begin
+ multiplicar(primeiroValor, segundoValor);
+end;
+
+procedure TForm1.BtnSomarClick(Sender: TObject);
+begin
+ somar(primeiroValor, segundoValor);
+end;
+
+procedure TForm1.BtnSubClick(Sender: TObject);
+begin
+ subtrair(primeiroValor, segundoValor);
+end;
+
+end.
